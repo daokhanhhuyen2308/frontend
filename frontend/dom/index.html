@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & Event</title>
+
+    <style>
+        body {
+            font-family: monospace, sans-serif;
+        }
+
+        /* #box{
+            
+            font-size: 7rem;
+            text-align: center;
+            background-color: lightgreen;
+            width: 180px;
+            height: 180px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        } */
+
+        /* #myButton{
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        } */
+
+        /* .button{
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            background-color: hsl(210, 100%, 60%);
+            color: #ffff;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        } */
+
+        #myButton{
+            font-size: 2.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+
+
+        }
+        .enable{
+            background-color: hsl(210, 100%, 60%);
+            color: white;
+        }
+        .hover{
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+        .disable{
+            background-color: hsl(0, 0%, 30%);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <ol id="fruits">
+        <li id="apple">apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+        <li id="coconut">coconut</li>
+        <li id="avocado">avocado</li>
+    </ol> -->
+
+
+    <!-- <ul id="fruits">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+
+    </ul>
+    <ul id="vegetables">
+        <li>onions</li>
+        <li>carrots</li>
+        <li>potatoes</li>
+    </ul>
+    <ul id="desserts">
+        <li>cake</li>
+        <li>pie</li>
+        <li>ice cream</li>
+    </ul> -->
+<!-- 
+    <div id="box1" class="box">
+        <p>Box1</p>
+    </div>
+
+    <div id="box2" class="box">
+        <p>Box2</p>
+    </div>
+
+    <div id="box3" class="box">
+        <p>Box3</p>
+    </div>
+
+    <div id="box4" class="box">
+        <p>Box4</p>
+    </div> -->
+
+    <!-- <div id="box">
+        &#x1F600;
+    </div> -->
+
+    <!-- <img src="../../images/bmwgrey.jpg" style="width: 500px" id="myCar">
+    <br/>
+    <button id="myButton">Hide</button> -->
+<!-- 
+    <button id="button1" class="button">Button 1</button>
+    <button id="button2" class="button">Button 2</button>
+    <button id="button3" class="button">Button 3</button>
+    <button id="button4" class="button">Button 4</button> -->
+
+    <button id="myButton">Button</button>
+
+    <script>
+        
+        //const box = document.getElementById("box");
+        // box.addEventListener('click', () => {
+        //     box.style.backgroundColor = 'tomato';
+        //     box.innerText = 'Very Happy😊';
+
+        // })
+
+        // box.addEventListener('mouseenter', () => {
+        //     box.style.backgroundColor = 'lightgreen';
+        //     box.innerText = 'Laugh out loud 😁';
+        // });
+
+        // box.addEventListener('mouseleave', () => {
+        //     box.style.backgroundColor = 'lightblue';
+        //     box.innerText = 'Sleeping 😴';
+        // });
+
+        // box.addEventListener('mousedown', () => {
+        //     box.style.backgroundColor = 'lightpink';
+        //     box.innerText = 'Ouch 😫';
+        // });
+
+        // box.addEventListener('mouseover', () =>{
+        //     box.style.backgroundColor = 'lightgray';
+        //     box.textContent = 'No way 😒';
+            
+        // });
+
+        
+            // const moveAmount = 10;
+            // let x = 0, y = 0;
+            
+            // document.addEventListener('keydown', event =>{
+            //     if(event.key.startsWith('Arrow')){
+
+            //         switch(event.key){
+            //             case "ArrowUp":
+            //                 y -= moveAmount;
+            //                 break;
+            //             case "ArrowDown":
+            //                 y += moveAmount;
+            //                 break;
+            //             case "ArrowLeft":
+            //                 x -= moveAmount;
+            //                 break;
+            //             case "ArrowRight":
+            //                 x += moveAmount;
+            //                 break;
+            //         }
+            //         // box.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            //         box.style.top = `${y}px`;
+            //         box.style.left = `${x}px`;
+            //     }
+            // });
+
+
+            // const myCar = document.getElementById('myCar');
+            // const myButton = document.getElementById('myButton');
+            // myButton.addEventListener('click', () => {
+            //     if(myCar.style.display === 'none'){
+            //         myCar.style.display = 'block';
+            //         myButton.innerText = 'Hide';
+
+            //     }
+
+            //     else{
+            //     myCar.style.display = 'none';
+            //     myButton.textContent = 'Show';
+            //     }
+            // })
+
+        
+            
+
+
+    </script>
+
+
+    <script src="../dom/dom.js"></script>
+    
+</body>
+</html>

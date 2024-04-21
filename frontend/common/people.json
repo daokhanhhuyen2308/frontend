@@ -1,0 +1,35 @@
+[{
+    "name": "Spongebob",
+    "age" : 20,
+    "hobbies": ["Cooking", "Jellyfishing", "Karatedo"],
+    "address": {
+        "street": "124 Conch Street",
+        "city": "Bikini Bottom",
+        "country": "Int. Water"
+    },
+    "phone-numbers": "0123-456-789"
+},
+{
+    "name": "Squidward",
+    "age" : 22,
+    "hobbies": ["Cooking", "Jellyfishing"],
+    "address": {
+        "street": "Manhattan",
+        "city": "New York",
+        "country": "America"
+    },
+    "phone-numbers": "0987-654-321"
+},
+
+{
+    "name": "Sandy Cheeks",
+    "age" : 30,
+    "hobbies": ["Swimming", "Eating"],
+    "address": {
+        "street": "221B Baker",
+        "city": "London",
+        "country": "England"
+    },
+    "phone-numbers": "0987-654-321"
+}
+]
