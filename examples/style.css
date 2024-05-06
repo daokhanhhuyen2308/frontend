@@ -1,0 +1,83 @@
+:root {
+    --success: green;
+    --error: red;
+    --invalid: orange;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: #ddd;
+  }
+
+  .buttons {
+    margin: 50px;
+  }
+
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    min-width: 125px;
+    border: 0.5px solid #ddd;
+    font-weight: 500;
+  }
+
+  #toastBox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .toast {
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid var(--success);
+    border-bottom: 4px solid var(--success);
+
+  }
+    box-icon{
+   margin-right: 20px;
+   color: green;
+}
+.success {
+    background-color: var(--success);
+    color: white;
+  }
+
+  .error {
+    background-color: var(--error);
+    color: white;
+  }
+.invalid{
+    background-color: var(--invalid);
+    color: white;
+  
+}
+
+/* .toast.error{
+    border-left: 5px solid var(--error);
+}
+
+.toast.invalid{
+    border-left: 5px solid var(--invalid);  
+} */

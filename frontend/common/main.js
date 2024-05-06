@@ -1140,7 +1140,7 @@
 
 //Callback hell
 
-/* 
+/*
 let myPromise = new Promise(function(myResolve, myReject) {
 // "Producing Code" (May take some time)
 
@@ -1150,8 +1150,8 @@ let myPromise = new Promise(function(myResolve, myReject) {
 
 // "Consuming Code" (Must wait for a fulfilled Promise)
 myPromise.then(
-  function(value) 
-  function(error) 
+  function(value)
+  function(error)
 */
 
 //Promise
@@ -1386,21 +1386,52 @@ myPromise.then(
 //   console.log('Task3');
 // });
 
-let promise1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve([1]);
-  }, 1000);
-});
+// let promise1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve([1]);
+//   }, 1000);
+// });
 
-let promise2 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve([2, 3]);
-  }, 2000);
-});
+// let promise2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve([2, 3]);
+//   }, 2000);
+// });
+
+// //khi mà all promises đều execute xong thì nó mới trả ra kết quả values
+// //Promise.all([promise1, promise2, ...]) very useful when you want to run parallel
+// Promise.all([promise1, promise2]).then(([result1, result2]) => {
+//   console.log(result1.concat(result2));
+// });
+
+// async function fetchData() {
+//   const url = "https://jsonplaceholder.typicode.com/posts";
+
+//   try {
+//     const response = await fetch(url);
+
+//     if (!response.ok) {
+//       throw new Error(response.statusText);
+//     }
+
+//     const datas = await response.json();
+//     // console.log(datas);
 
 
-//khi mà all promises đều execute xong thì nó mới trả ra kết quả values
-//Promise.all([promise1, promise2, ...]) very useful when you want to run parallel
-Promise.all([promise1, promise2]).then(([result1, result2]) => {
-  console.log(result1.concat(result2));
-});
+//     const htmls = datas.map((post) => {
+//       return `<li>
+//        <h2>${post.title}</h2>
+//        <p>${post.body}</p>
+//        </li>`;
+//     });
+//     const html = htmls.join("");
+
+//     document.getElementById("post-block").innerHTML = html;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// fetchData();
+
+

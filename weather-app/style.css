@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: hsl(195, 55%, 69%);
+}
+
+.card {
+    max-width: 400px;
+    background: linear-gradient(180deg, hsl(210, 100%, 70%), hsl(40, 100%, 75%));
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    /* margin: 100px auto 0; */
+    align-items: center;
+    padding: 40px 35px;
+    margin: 50px auto;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#searchInput {
+    width: 100%;
+    border: 0.5px solid #ccc;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 30px;
+    outline: none;
+    margin-right: 10px;
+    height: 40px;
+
+}
+
+
+#searchButton {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    padding: 0px 10px;
+
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+}
+
+#weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    color: red;
+
+}

@@ -1,0 +1,149 @@
+:root{
+    --success: hsl(120, 62%, 30%);
+    --error: hsl(0, 87%, 53%);
+    --warning: hsl(39, 89%, 46%);
+
+    --success-light: hsla(120, 66%, 39%, 0.6);
+    --error-light: hsla(0, 82%, 51%, 0.6);
+    --warning-light: hsla(39, 90%, 52%, 0.6);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    color: white;
+}
+.control button{
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button + button{
+    margin-left: 10px;
+}
+
+.success{
+    background-color: var(--success);
+}
+
+.error{
+    background-color: var(--error);
+}
+.warning{
+    background-color: var(--warning);
+}
+
+#toasts{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.toast{
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border-left: 5px solid var(--success);
+    overflow: hidden;
+    animation: slide_show 2s ease foward;
+    margin-bottom: 20px;
+}
+
+
+.toast.success{
+    background-color: var(--success-light);
+    
+}
+.toast.warning{
+    background-color: var(--warning-light);
+    border-left: 5px solid var(--warning);
+    
+}
+.toast.error{
+    background-color: var(--error-light);
+    border-left: 5px solid var(--error);
+    
+}
+
+span{
+    margin-left: 15px;
+}
+
+.toast .timeline{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: var(--success);
+    width: 100%;
+    /* margin: 0; */
+    animation: slide 3s ease forwards;
+}
+
+.toast.success .timeline{
+    background-color: var(--success);
+
+}
+
+.toast.error .timeline{
+    background-color: var(--error);
+
+}
+
+.toast.warning .timeline{
+    background-color: var(--warning);
+
+}
+
+
+@keyframes slide {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+    
+}
+
+@keyframes slide_show {
+
+    0%{
+        transform: translateX(100%);
+
+    }
+
+    25%{
+        transform: translateX(-10%);
+    }
+
+    50%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(-10px);
+    }
+    
+}
+
+
+

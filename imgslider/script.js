@@ -1,19 +1,22 @@
-const slides = document.querySelectorAll('.slides');
+let slides = document.querySelectorAll('.slides');
 let slideIndex = 0;
 let intervalId = null;
-function initializeSlider(){
 
+initializeSlider();
+function initializeSlider() {
 
-}
-
-function showSlider(index){
-
-}
-
-function previousSlide(){
+    slides[slideIndex].classList.add('displaySlider');
 
 }
 
-function nextSlide(){
+function showSlider(index) {
+
+}
+
+function previousSlide() {
+
+}
+
+function nextSlide() {
 
 }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Toast-Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="control">
+      <button class="success">Show Success</button>
+      <button class="warning">Show Warning</button>
+      <button class="error">Show Error</button>
+    </div>
+
+    <div id="toasts" style="display: none">
+      <div class="toast success">
+        <box-icon type="solid" name="check-circle"></box-icon>
+        <span>This is a success message!</span>
+        <span class="timeline"></span>
+      </div>
+
+      <div class="toast warning">
+        <box-icon name="info-circle" type="solid"></box-icon>
+
+        <span>This is a warning message!</span>
+        <span class="timeline"></span>
+      </div>
+
+      <div class="toast error">
+        <box-icon type="solid" name="error"></box-icon>
+        <span>This is a error message!</span>
+        <span class="timeline"></span>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
